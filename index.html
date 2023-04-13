@@ -11,10 +11,12 @@
     <!--Header-->
     <header>
         <section>
-            <img src="images/artcom_marca.svg" alt="Marca de Artcom">
-            <h1>Artcom</h1>
+            <div>
+                <a href="#"></a><img src="images/artcom_marca.svg" alt="Marca de Artcom"></a>
+                <h1>Artcom</h1>
+            </div>
             <nav>
-                <img src="images/hamburgueza.svg" alt="Menú">
+                <a href="#"><img src="images/hamburgueza.svg" alt="Menú"></a>
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Conocenos</a></li>
@@ -31,38 +33,36 @@
     </header>
     <!--/Header-->
     <!--Slider-->
-    <section id="slider">
-        <button id="atras"></button>
-        <button id="adelante"></button>
-        <nav>
-            <ul>
-                <li id="nav_slide1"><a href="#"></a></li>
-                <li id="nav_slide2"><a href="#"></a></li>
-                <li id="nav_slide3"><a href="#"></a></li>
-                <li id="nav_slide4"><a href="#"></a></li>
-            </ul>
-        </nav>
-        <!--Slide 1-->
-        <section id="slide1">
-            <h2>Títilo del slide 1</h2>
-            <button>Suscríbete</button>
-        </section>
-        <!--Slide 2-->
-        <section id="slide1">
-            <h2>Títilo del slide 2</h2>
-            <button>Suscríbete</button>
-        </section>
-        <!--Slide 3-->
-        <section id="slide1">
-            <h2>Títilo del slide 3</h2>
-            <button>Suscríbete</button>
-        </section>
-        <!--Slide 4-->
-        <section id="slide1">
-            <h2>Títilo del slide 4</h2>
-            <button>Suscríbete</button>
-        </section>
-    </section>
+    <div id="slider" class="container">
+        <div class="carousel">
+          <div class="slider">
+            <!--Slide 1-->
+            <section id="slide1">
+                <h2>Tu <strong>arte</strong> <br> está <strong>aquí</strong></h2>
+                <button>Inscríbete</button>
+            </section>
+            <!--Slide 2-->
+            <section id="slide2">
+                <h2>Títilo del slide 2</h2>
+                <button>Suscríbete</button>
+            </section>
+            <!--Slide 3-->
+            <section id="slide3">
+                <h2>Títilo del slide 3</h2>
+                <button>Suscríbete</button>
+            </section>
+            <!--Slide 4-->
+            <section id="slide4">
+                <h2>Títilo del slide 4</h2>
+                <button>Suscríbete</button>
+            </section>
+          </div>
+            <div class="controls">
+              <button class="arrow prev">Atras</button>
+              <button class="arrow next">Adelante</button>
+            </div>
+        </div>
+      </div>
     <!--/Slider-->
     <!--Ruben 63-->
 	<!-- Beneficios -->
@@ -395,10 +395,10 @@
         </section>
     
         <hr>
-        <p>© 2022 Artcom | Universidad de Montemorelos, todos los derechos reservados.</p>
+        <p>© <span id="anio"></span> Artcom | Universidad de Montemorelos, todos los derechos reservados.</p>
     
     </footer>
     <!--/Enoc 464-->
-    
+    <script src="js/scripts.js"></script>
 </body>
 </html>
