@@ -53,6 +53,68 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/birrete.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/birrete.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/carreras.arquitectura.jpeg" : {
+      "ft" : 16384,
+      "iS" : 351096,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/carreras.arquitectura.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/carreras.artesvisuales.jpeg" : {
+      "ft" : 16384,
+      "iS" : 423131,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/carreras.artesvisuales.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/carreras.comunicacion.jpeg" : {
+      "ft" : 16384,
+      "iS" : 356242,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/carreras.comunicacion.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/carreras.diseño.jpeg" : {
+      "ft" : 16384,
+      "iS" : 342459,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/carreras.diseño.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/comunicacion.jpg" : {
       "ft" : 16384,
       "iS" : 5871,
@@ -89,6 +151,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/flecha.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/flecha.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/images\/hamburgueza.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -109,11 +181,31 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/images\/libro.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/libro.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/images\/lupita.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/images\/lupita.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/lupita2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/lupita2.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -134,17 +226,6 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/js\/scripts-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/scripts\/scripts.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/scripts\/scripts-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
