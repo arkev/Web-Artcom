@@ -187,7 +187,6 @@ header section ul{
 #carreras2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
 }
 
 #carreras2 h3 {
@@ -210,7 +209,6 @@ header section ul{
 
 .artcarrera {
     background-image: linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(images/carreras.arquitectura.jpeg);
-    display: grid;
 }
 
 .arqcarrera {
@@ -239,6 +237,35 @@ svg {
 }
 
 /* Ruben */ 
+/* Yaya */
+
+
+
+/* Yaya */
+/* Sherilyn */
+
+
+
+/* Sherilyn */
+/* Mercy */
+
+
+
+/* Mercy */
+/* Brit */
+
+
+/* Brit */
+/* Adely */
+
+
+
+/* Adely */
+/* Enoc */
+
+
+
+/* Enoc */
 
 
 /* Versión tablet */
