@@ -151,6 +151,123 @@ header section ul{
     
  /* /Slider */ 
 
+/* Ruben */ 
+
+#beneficios {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 200px;
+}
+
+#beneficios h4 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 15px 10px 0;
+}
+
+#beneficios img {
+    display: block;
+    margin: auto;
+    height: 74px;
+}
+
+#carreras h2 {
+    background-color: #262626;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    font-size: 3em;
+    margin: 0;
+}
+
+#carreras2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#carreras2 h3 {
+    color: white;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 50% 0 auto;
+}
+
+#carreras2 a {
+    text-decoration: none;
+}
+
+.bg-cover {
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.artcarrera {
+    background-image: linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(images/carreras.arquitectura.jpeg);
+}
+
+.arqcarrera {
+    background-image: linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(images/carreras.artesvisuales.jpeg);
+}
+
+.comcarrera {
+    background-image: linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(images/carreras.comunicacion.jpeg);
+}
+
+.discarrera {
+    background-image: linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(images/carreras.diseño.jpeg);
+}
+
+.carrcontenido {
+    width: 70%;
+    display: grid;
+    grid-template: 1fr 55px / 1fr 5%;
+    margin: 0 auto;
+}
+
+svg {
+    width: 30px;
+    fill: white;
+    margin: auto 0 0;
+}
+
+/* Ruben */ 
+/* Yaya */
+
+
+
+/* Yaya */
+/* Sherilyn */
+
+
+
+/* Sherilyn */
+/* Mercy */
+
+
+
+/* Mercy */
+/* Brit */
+
+
+/* Brit */
+/* Adely */
+
+
+
+/* Adely */
+/* Enoc */
+
+
+
+/* Enoc */
+
+
 /* Versión tablet */
 @media (min-width: 768px){
     /*Aquí inician los estilos para tablet*/
