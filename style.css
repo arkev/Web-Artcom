@@ -1499,94 +1499,94 @@ svg {
 
 
 /*-- Sherilyn 1501-2000 --*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#conocenos h2 {
+    background-color: #FC5F10;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    font-size: 3em;
+    margin: 0;
+}   
+
+#conocenos div {
+display: grid;
+grid-template: 1fr 1fr/100%;
+}
+
+#conocenos div a:first-child{
+    background:linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%),url(images/maestros.jpg) no-repeat top center;
+}
+ 
+#conocenos div a:last-child{
+    background:linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%),url(images/instalaciones.jpg) no-repeat top center;
+}
+#conocenos div a{
+    background-size: cover!important;
+    height: 220px;
+    color: #fff;
+    padding: 45px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#conocenos a h3{
+    margin-bottom: 0;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+#conocenos a button{
+    background-color: transparent;
+    padding: 12px 30px;
+    font-size: 1em;
+    border: 3px solid white;
+    border-radius: 30px;
+    cursor: pointer; 
+    color: #fff;
+}
+/* Versión tablet */
+@media (min-width: 768px){
+    /*Aquí inician los estilos para tablet*/
+    #conocenos div {
+        grid-template: 1fr/50% 50%;
+    }
+    #conocenos div a{
+        height: 260px;
+    }
+    /*Aquí terminan los estilos para tablet*/
+}
+
+/* Versión laptop */
+@media (min-width: 1024px){
+    /*Aquí inician los estilos para laptop*/
+    #conocenos a h3{
+        font-size: 1.6em;
+    }
+    #conocenos div a{
+        height: 370px;
+    }
+    /*Aquí terminan los estilos para laptop*/
+}
+
+/* Versión Desktop */
+@media (min-width: 1200px){
+    /*Aquí inician los estilos para Desktop*/
+    #conocenos div a{
+        height: 430px;
+    }
+    /*Aquí terminan los estilos para Desktop*/
+}
+
+/* Versión Large Screen */
+@media (min-width: 1440px){
+    /*Aquí inician los estilos para Large Screen*/
+    
+    /*Aquí terminan los estilos para Large Screen*/
+}
 
 
 
