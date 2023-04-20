@@ -3500,17 +3500,45 @@ svg {
 
 /*-- Enoc 3501-adelante --*/
 
+
+
+
+
+
+
+
 footer {
-    background-color: #333;
+    background-color: #262626;
     color: #fff;
-    padding: 20px;
+    padding: 50px 0;
     text-align: center;
+  }
+
+  footer section {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    gap:1em;
+    flex-flow: row wrap;
+    flex: 1 0 100%;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
   
   footer a {
     color: #fff;
   }
-  
+
+  footer > section > div:nth-child(1) > img{
+    display: inline-block;
+    width: 100%;
+}
+  footer > section > div:nth-child(1) > img:nth-child(1){
+    width: 70%;
+  }
+
   @media screen and (max-width: 480px) {
     footer {
       padding: 10px;
