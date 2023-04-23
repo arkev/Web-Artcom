@@ -999,6 +999,104 @@ svg {
 
 
 /*-- Yaya 1001-1500 --*/
+#blog h2 {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+}
+
+#blog {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 9em 1fr 1fr;
+}
+
+#blog > a:nth-child(2) {
+    background: linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%),url(images/perfilestudiante.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 66px;
+}
+
+#blog > a:nth-child(3) {
+    background: linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%),url(images/graduanda1.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 66px;
+}
+
+#blog a {
+    color: white;
+    text-decoration: none;
+}
+
+#blog a span {
+    font-size: 1.1em;
+    margin-bottom: 160px;
+    display: block;
+}
+
+#blog a h3 {
+    font-size: 1.5em;
+}
+
+#blog button {
+        color: white;
+        background: transparent;
+        border: 3px solid white;
+        font-size: 1.5em;
+        padding: 0.2em 1em;
+        border-radius: 35px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        float: right;
+        margin-top: 30px;
+    }
+    #blog button:hover {
+        color: #F85F11;
+        border: 3px solid #F85F11;
+    }
+    #blog button:active {
+        color: #c54708;
+        border: 3px solid #c54708;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    }
+
+/* Versión tablet */
+@media (min-width: 768px){
+    /*Aquí inician los estilos para tablet*/
+   #blog {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 9em 1fr;
+}
+
+#blog h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+    /*Aquí terminan los estilos para tablet*/
+}
+
+/* Versión laptop */
+@media (min-width: 1024px){
+    /*Aquí inician los estilos para laptop*/
+    
+    /*Aquí terminan los estilos para laptop*/
+}
+
+/* Versión Desktop */
+@media (min-width: 1200px){
+    /*Aquí inician los estilos para Desktop*/
+   
+    /*Aquí terminan los estilos para Desktop*/
+}
+
+/* Versión Large Screen */
+@media (min-width: 1440px){
+    /*Aquí inician los estilos para Large Screen*/
+   
+    /*Aquí terminan los estilos para Large Screen*/
+}
+
+
 
 
 
