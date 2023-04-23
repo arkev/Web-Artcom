@@ -50,7 +50,7 @@ header section ul{
 }
 
 /*   Slider */
-#slider {
+#slider, #sliderE {
     width: 100%;
     margin: 0 auto 100px;
     height: 480px;
@@ -106,7 +106,7 @@ header section ul{
         border: 3px solid #c54708;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
     }
-    #slider .controls {
+    #slider .controls, #sliderE .controls {
         align-items: center;
         display: flex;
     }
@@ -3511,108 +3511,13 @@ grid-template: 1fr 1fr/100%;
     font-size: 3em;
     margin: 0;
 }
-
-/*   Slider */
-#slider {
-    width: 100%;
-    margin: 0 auto 100px;
-    height: 480px;
+#sliderE {
+    margin: 0 auto;
+    height: 300px;
 }
-    .carousel {
-      width: 100%;
-      height: 100%;
-      border-radius: 3px;
-      display:flex;
-      justify-content: flex-start;
-      position: relative;
-      overflow:hidden;
-    }
-    .slider {
-      display:flex;
-      height: 100%;
-      width: 400%;
-      flex-shrink:0;
-      transition: all 0.5s;
-      color: white;
-    }
-    .slider h2 {
-        font-weight: 400;
-        font-size: 4.5em;
-        line-height: 1em;
-        margin-bottom: 26px;
-    }
-    .slider section {
-        width: 25%;
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        padding-left: 70px;
-    }
-    .slider button {
-        color: white;
-        background: transparent;
-        border: 3px solid white;
-        font-size: 1.8em;
-        padding: 0.2em 1em;
-        border-radius: 35px;
-        cursor: pointer;
-        transition: all .5s ease-in-out;
-    }
-    .slider button:hover {
-        color: #F85F11;
-        border: 3px solid #F85F11;
-    }
-    .slider button:active {
-        color: #c54708;
-        border: 3px solid #c54708;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-    }
-    #slider .controls {
-        align-items: center;
-        display: flex;
-    }
-    .prev, .next {
-     position: absolute;
-    }
-    .prev {
-      left: 10px;
-    }
-    .next {
-      right: 10px;
-    }
-    #slide1{
-        background: url(images/arte.jpg) no-repeat center center ;
-        background-size: cover;
-    }
-    #slide2{
-        background: url(images/arquitectura.jpg) no-repeat center center ;
-        background-size: cover;
-    }
-    #slide3{
-        background: url(images/disenio.jpg) no-repeat center center ;
-        background-size: cover;
-    }
-    #slide4{
-        background: url(images/comunicacion.jpg) no-repeat center center ;
-        background-size: cover;
-    }
-    .controls button{
-        border: 0;
-        color: transparent;
-        width: 26px;
-        height: 48px;
-        cursor: pointer;
-    }
-    .controls button.prev{
-        background: url(images/Izquierda.svg) transparent no-repeat 0 0;
-    }
-    .controls button.next{
-        background: url(images/Derecha.svg) transparent no-repeat 0 0;
-    }
-
-/*   /Slider */
+#sliderE > div > div.slider > section > img {
+    width: 100%;
+}
 
 footer {
     background-color: #262626;
@@ -3714,7 +3619,7 @@ footer section {
   }
 
 /*  Version Laptop */
-  @media (min-width: 1024px) {
+  @media (min-width: 1024px) {  
     footer {
     font-size: 1em;
 }
@@ -3723,4 +3628,3 @@ footer section {
     grid-template: 1fr / 300px 1fr 1fr 1fr 32px;
 }
   }
-  
