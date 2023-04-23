@@ -3500,17 +3500,124 @@ grid-template: 1fr 1fr/100%;
 
 /*-- Enoc 3501-adelante --*/
 
+#Lugares h2 {
+    background-color: #727272;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    font-size: 3em;
+    margin: 0;
+}
 
+/*   Slider */
+#slider {
+    width: 100%;
+    margin: 0 auto 100px;
+    height: 480px;
+}
+    .carousel {
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+      display:flex;
+      justify-content: flex-start;
+      position: relative;
+      overflow:hidden;
+    }
+    .slider {
+      display:flex;
+      height: 100%;
+      width: 400%;
+      flex-shrink:0;
+      transition: all 0.5s;
+      color: white;
+    }
+    .slider h2 {
+        font-weight: 400;
+        font-size: 4.5em;
+        line-height: 1em;
+        margin-bottom: 26px;
+    }
+    .slider section {
+        width: 25%;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 70px;
+    }
+    .slider button {
+        color: white;
+        background: transparent;
+        border: 3px solid white;
+        font-size: 1.8em;
+        padding: 0.2em 1em;
+        border-radius: 35px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+    .slider button:hover {
+        color: #F85F11;
+        border: 3px solid #F85F11;
+    }
+    .slider button:active {
+        color: #c54708;
+        border: 3px solid #c54708;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    }
+    #slider .controls {
+        align-items: center;
+        display: flex;
+    }
+    .prev, .next {
+     position: absolute;
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+    #slide1{
+        background: url(images/arte.jpg) no-repeat center center ;
+        background-size: cover;
+    }
+    #slide2{
+        background: url(images/arquitectura.jpg) no-repeat center center ;
+        background-size: cover;
+    }
+    #slide3{
+        background: url(images/disenio.jpg) no-repeat center center ;
+        background-size: cover;
+    }
+    #slide4{
+        background: url(images/comunicacion.jpg) no-repeat center center ;
+        background-size: cover;
+    }
+    .controls button{
+        border: 0;
+        color: transparent;
+        width: 26px;
+        height: 48px;
+        cursor: pointer;
+    }
+    .controls button.prev{
+        background: url(images/Izquierda.svg) transparent no-repeat 0 0;
+    }
+    .controls button.next{
+        background: url(images/Derecha.svg) transparent no-repeat 0 0;
+    }
 
-
-
-
-
+/*   /Slider */
 
 footer {
     background-color: #262626;
     color: #fff;
-    padding: 50px 0;
+    padding: 50px 0 33px;
     text-align: center;
   }
 
@@ -3518,30 +3625,102 @@ footer {
     width: 90%;
     margin: 0 auto;
     max-width: 1440px;
-    display: flex;
-    gap:1em;
-    flex-flow: row wrap;
-    flex: 1 0 100%;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: grid;
+    gap: 1em;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr;
   }
-  
+
+  footer h3 {
+    font-weight: normal;
+    margin-top: 0%;
+    text-align: center;
+  }
+
   footer a {
-    color: #fff;
+    color: #DCDCDC;
+    text-decoration: none;
   }
+
+  footer p {
+    color: #DCDCDC;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  footer li {
+    text-align: center;
+    list-style-type: none;
+    margin: 5px 0;
+  }
+
+  footer ul {
+    padding-inline-start: 0px;
+  }
+
+footer > p {
+    text-align: center;
+    margin: 30px 5px 0;
+}
+
+footer > section > div:nth-child(2) > p:nth-child(3) > a {
+    margin: 5px;
+}
+
+footer > section > div:nth-child(2) > p:nth-child(4) > a {
+    margin: 5px;
+}
 
   footer > section > div:nth-child(1) > img{
     display: inline-block;
-    width: 100%;
+    width: 70%;
 }
   footer > section > div:nth-child(1) > img:nth-child(1){
-    width: 70%;
+    width: 40%;
   }
 
-  @media screen and (max-width: 480px) {
+  footer > section > div:nth-child(2) > p:nth-child(3) > img {
+    width: 7%;
+  }
+
+  footer > section > div:nth-child(2) > p:nth-child(4) > img{
+    width: 7%;
+  }
+
+    #whatsapp, #facebook, #instagram, #youtube {
+    margin-right: 10px;
+}
+
+/*  Version Tablet */
+  @media (min-width: 768px) {
     footer {
-      padding: 10px;
-    }
+    font-size: .8em;
+}
+
+footer section {
+    grid-template: 1fr / 175px 1fr 1fr 1fr 32px;
+}
+    footer h3 {
+    text-align: left;
+  }
+    footer p {
+    text-align: left;
+  }
+    footer li {
+    text-align: left;
+  }
+  footer > p {
+    text-align: center;
+}
+  }
+
+/*  Version Laptop */
+  @media (min-width: 1024px) {
+    footer {
+    font-size: 1em;
+}
+
+footer section {
+    grid-template: 1fr / 300px 1fr 1fr 1fr 32px;
+}
   }
   
