@@ -87,6 +87,9 @@ header section ul{
         flex-direction: column;
         padding-left: 70px;
     }
+    #sliderE .slider section {
+        padding-left: 0;
+    }
     .slider button {
         color: white;
         background: transparent;
@@ -156,6 +159,9 @@ header section ul{
     /*Aquí inician los estilos para tablet*/
     .slider section {
         padding-left: 170px;
+    }
+    #sliderE .slider section {
+        padding-left: 0;
     }
     /*Aquí terminan los estilos para tablet*/
 }
