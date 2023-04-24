@@ -14,70 +14,81 @@ function muestraAnioActual() {
 muestraAnioActual();
 
 //--- Código del slider
+// Variables del primer slider
+const slider = document.querySelector("#slider .slider");
+const prev = document.querySelector("#slider .prev");
+const next = document.querySelector("#slider .next");
+const carousel = document.querySelector("#slider .carousel");
 
-// Seleccionar el elemento con la clase "slider"
-const slider = document.querySelector(".slider");
-
-// Seleccionar el botón "anterior"
-const prev = document.querySelector(".prev");
-
-// Seleccionar el botón "siguiente"
-const next = document.querySelector(".next");
-
-// Seleccionar el carrusel (contenedor de los slides)
-const carousel = document.querySelector("#slider .carousel, #sliderE .carousel");
+// Variables del segundo slider
+const sliderE = document.querySelector("#sliderE .slider");
+const prevE = document.querySelector("#sliderE .prev");
+const nextE = document.querySelector("#sliderE .next");
+const carouselE = document.querySelector("#sliderE .carousel");
 
 // Inicializar la variable de dirección
 let direction;
 
-// Agregar un event listener al botón "anterior"
+// botón "anterior" del primer slider
 prev.addEventListener("click", function() {
-// Si la dirección es -1 (es decir, hacia la izquierda)
 if(direction === -1) {
-// Mover el primer slide al final del carrusel
 slider.appendChild(slider.firstElementChild);
-// Cambiar la dirección a 1 (hacia la derecha)
 direction = 1;
-alert("funcion");
 }
-
-// Alinear los slides a la derecha del carrusel
 carousel.style.justifyContent = "flex-end";
-// Mover los slides hacia la izquierda (25% del ancho del slide)
 slider.style.transform = "translateX(25%)";
 })
 
-// Agregar un event listener al botón "siguiente"
-next.addEventListener("click", function() {
-// Cambiar la dirección a -1 (hacia la izquierda)
-direction = -1;
-alert("funcion");
+// botón "anterior" del segundo slider
+prevE.addEventListener("click", function() {
+    if(direction === -1) {
+    sliderE.appendChild(sliderE.firstElementChild);
+    direction = 1;
+    }
+    carouselE.style.justifyContent = "flex-end";
+    sliderE.style.transform = "translateX(25%)";
+    })
 
-// Alinear los slides a la izquierda del carrusel
+// botón "siguiente" del primer slider
+next.addEventListener("click", function() {
+direction = -1;
 carousel.style.justifyContent = "flex-start";
-// Mover los slides hacia la derecha (25% del ancho del slide)
 slider.style.transform = "translateX(-25%)";
 })
 
-// Agregar un event listener para detectar cuando termina la transición
+// botón "siguiente" del segundo slider
+nextE.addEventListener("click", function() {
+    direction = -1;
+    carouselE.style.justifyContent = "flex-start";
+    sliderE.style.transform = "translateX(-25%)";
+})
+
+//listener para detectar cuando termina la transición del primer slider
 slider.addEventListener("transitionend", _ => {
-// Si la dirección es -1 (es decir, hacia la izquierda)
 if(direction === -1) {
-// Mover el último slide al principio del carrusel
 slider.appendChild(slider.firstElementChild);
 }
-// Si la dirección es 1 (es decir, hacia la derecha)
 else if (direction === 1) {
-// Mover el primer slide al final del carrusel
 slider.prepend(slider.lastElementChild);
 }
-
-// Deshabilitar la transición temporalmente
 slider.style.transition = "none";
-// Restablecer la posición de los slides a su lugar original
 slider.style.transform = "translate(0)";
-// Habilitar la transición después de un breve tiempo
 setTimeout(_ => {
 slider.style.transition = "all 0.5s";
 })
 })
+
+//listener para detectar cuando termina la transición del SEGUNDO slider
+sliderE.addEventListener("transitionend", _ => {
+    if(direction === -1) {
+    sliderE.appendChild(sliderE.firstElementChild);
+    }
+    else if (direction === 1) {
+    sliderE.prepend(sliderE.lastElementChild);
+    }
+    sliderE.style.transition = "none";
+    sliderE.style.transform = "translate(0)";
+    setTimeout(_ => {
+    sliderE.style.transition = "all 0.5s";
+    })
+    })
