@@ -25,7 +25,7 @@ const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 
 // Seleccionar el carrusel (contenedor de los slides)
-const carousel = document.querySelector(".carousel");
+const carousel = document.querySelector("#slider .carousel, #sliderE .carousel");
 
 // Inicializar la variable de dirección
 let direction;
@@ -38,6 +38,7 @@ if(direction === -1) {
 slider.appendChild(slider.firstElementChild);
 // Cambiar la dirección a 1 (hacia la derecha)
 direction = 1;
+alert("funcion");
 }
 
 // Alinear los slides a la derecha del carrusel
@@ -50,6 +51,7 @@ slider.style.transform = "translateX(25%)";
 next.addEventListener("click", function() {
 // Cambiar la dirección a -1 (hacia la izquierda)
 direction = -1;
+alert("funcion");
 
 // Alinear los slides a la izquierda del carrusel
 carousel.style.justifyContent = "flex-start";
