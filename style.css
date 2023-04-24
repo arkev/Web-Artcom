@@ -50,7 +50,7 @@ header section ul{
 }
 
 /*   Slider */
-#slider {
+#slider, #sliderE {
     width: 100%;
     margin: 0 auto 100px;
     height: 480px;
@@ -106,7 +106,7 @@ header section ul{
         border: 3px solid #c54708;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
     }
-    #slider .controls {
+    #slider .controls, #sliderE .controls {
         align-items: center;
         display: flex;
     }
@@ -999,6 +999,104 @@ svg {
 
 
 /*-- Yaya 1001-1500 --*/
+#blog h2 {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+}
+
+#blog {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 9em 1fr 1fr;
+}
+
+#blog > a:nth-child(2) {
+    background: linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%),url(images/perfilestudiante.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 66px;
+}
+
+#blog > a:nth-child(3) {
+    background: linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%),url(images/graduanda1.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 66px;
+}
+
+#blog a {
+    color: white;
+    text-decoration: none;
+}
+
+#blog a span {
+    font-size: 1.1em;
+    margin-bottom: 160px;
+    display: block;
+}
+
+#blog a h3 {
+    font-size: 1.5em;
+}
+
+#blog button {
+        color: white;
+        background: transparent;
+        border: 3px solid white;
+        font-size: 1.5em;
+        padding: 0.2em 1em;
+        border-radius: 35px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        float: right;
+        margin-top: 30px;
+    }
+    #blog button:hover {
+        color: #F85F11;
+        border: 3px solid #F85F11;
+    }
+    #blog button:active {
+        color: #c54708;
+        border: 3px solid #c54708;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    }
+
+/* Versión tablet */
+@media (min-width: 768px){
+    /*Aquí inician los estilos para tablet*/
+   #blog {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 9em 1fr;
+}
+
+#blog h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+    /*Aquí terminan los estilos para tablet*/
+}
+
+/* Versión laptop */
+@media (min-width: 1024px){
+    /*Aquí inician los estilos para laptop*/
+    
+    /*Aquí terminan los estilos para laptop*/
+}
+
+/* Versión Desktop */
+@media (min-width: 1200px){
+    /*Aquí inician los estilos para Desktop*/
+   
+    /*Aquí terminan los estilos para Desktop*/
+}
+
+/* Versión Large Screen */
+@media (min-width: 1440px){
+    /*Aquí inician los estilos para Large Screen*/
+   
+    /*Aquí terminan los estilos para Large Screen*/
+}
+
+
 
 
 
@@ -1499,94 +1597,94 @@ svg {
 
 
 /*-- Sherilyn 1501-2000 --*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#conocenos h2 {
+    background-color: #FC5F10;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    font-size: 3em;
+    margin: 0;
+}   
+
+#conocenos div {
+display: grid;
+grid-template: 1fr 1fr/100%;
+}
+
+#conocenos div a:first-child{
+    background:linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%),url(images/maestros.jpg) no-repeat top center;
+}
+ 
+#conocenos div a:last-child{
+    background:linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%),url(images/instalaciones.jpg) no-repeat top center;
+}
+#conocenos div a{
+    background-size: cover!important;
+    height: 220px;
+    color: #fff;
+    padding: 45px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#conocenos a h3{
+    margin-bottom: 0;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+#conocenos a button{
+    background-color: transparent;
+    padding: 12px 30px;
+    font-size: 1em;
+    border: 3px solid white;
+    border-radius: 30px;
+    cursor: pointer; 
+    color: #fff;
+}
+/* Versión tablet */
+@media (min-width: 768px){
+    /*Aquí inician los estilos para tablet*/
+    #conocenos div {
+        grid-template: 1fr/50% 50%;
+    }
+    #conocenos div a{
+        height: 260px;
+    }
+    /*Aquí terminan los estilos para tablet*/
+}
+
+/* Versión laptop */
+@media (min-width: 1024px){
+    /*Aquí inician los estilos para laptop*/
+    #conocenos a h3{
+        font-size: 1.6em;
+    }
+    #conocenos div a{
+        height: 370px;
+    }
+    /*Aquí terminan los estilos para laptop*/
+}
+
+/* Versión Desktop */
+@media (min-width: 1200px){
+    /*Aquí inician los estilos para Desktop*/
+    #conocenos div a{
+        height: 430px;
+    }
+    /*Aquí terminan los estilos para Desktop*/
+}
+
+/* Versión Large Screen */
+@media (min-width: 1440px){
+    /*Aquí inician los estilos para Large Screen*/
+    
+    /*Aquí terminan los estilos para Large Screen*/
+}
 
 
 
@@ -3560,20 +3658,131 @@ svg {
 
 /*-- Enoc 3501-adelante --*/
 
+#Lugares h2 {
+    background-color: #727272;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    font-size: 3em;
+    margin: 0;
+}
+#sliderE {
+    margin: 0 auto;
+    height: 300px;
+}
+#sliderE > div > div.slider > section > img {
+    width: 100%;
+}
+
 footer {
-    background-color: #333;
+    background-color: #262626;
     color: #fff;
-    padding: 20px;
+    padding: 50px 0 33px;
     text-align: center;
   }
-  
+
+  footer section {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1440px;
+    display: grid;
+    gap: 1em;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr;
+  }
+
+  footer h3 {
+    font-weight: normal;
+    margin-top: 0%;
+    text-align: center;
+  }
+
   footer a {
-    color: #fff;
+    color: #DCDCDC;
+    text-decoration: none;
   }
-  
-  @media screen and (max-width: 480px) {
+
+  footer p {
+    color: #DCDCDC;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  footer li {
+    text-align: center;
+    list-style-type: none;
+    margin: 5px 0;
+  }
+
+  footer ul {
+    padding-inline-start: 0px;
+  }
+
+footer > p {
+    text-align: center;
+    margin: 30px 5px 0;
+}
+
+footer > section > div:nth-child(2) > p:nth-child(3) > a {
+    margin: 5px;
+}
+
+footer > section > div:nth-child(2) > p:nth-child(4) > a {
+    margin: 5px;
+}
+
+  footer > section > div:nth-child(1) > img{
+    display: inline-block;
+    width: 70%;
+}
+  footer > section > div:nth-child(1) > img:nth-child(1){
+    width: 40%;
+  }
+
+  footer > section > div:nth-child(2) > p:nth-child(3) > img {
+    width: 7%;
+  }
+
+  footer > section > div:nth-child(2) > p:nth-child(4) > img{
+    width: 7%;
+  }
+
+    #whatsapp, #facebook, #instagram, #youtube {
+    margin-right: 10px;
+}
+
+/*  Version Tablet */
+  @media (min-width: 768px) {
     footer {
-      padding: 10px;
-    }
+    font-size: .8em;
+}
+
+footer section {
+    grid-template: 1fr / 175px 1fr 1fr 1fr 32px;
+}
+    footer h3 {
+    text-align: left;
   }
-  
+    footer p {
+    text-align: left;
+  }
+    footer li {
+    text-align: left;
+  }
+  footer > p {
+    text-align: center;
+}
+  }
+
+/*  Version Laptop */
+  @media (min-width: 1024px) {  
+    footer {
+    font-size: 1em;
+}
+
+footer section {
+    grid-template: 1fr / 300px 1fr 1fr 1fr 32px;
+}
+  }
