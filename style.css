@@ -2110,7 +2110,7 @@ grid-template: 1fr 1fr/100%;
 }
 #servicios2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
 }
 
 #servicios2 h3 {
@@ -2154,177 +2154,19 @@ grid-template: 1fr 1fr/100%;
     margin: 0 auto;
 }
 
-svg {
+#servicios svg {
     width: 30px;
     fill: white;
     margin: auto 0 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Versión tablet */
+@media (min-width: 768px){
+    /*Aquí inician los estilos para tablet*/
+    #servicios2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*Aquí terminan los estilos para tablet*/
+}
 
 
 
