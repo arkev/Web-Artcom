@@ -17,6 +17,14 @@
       "oAP" : "\/.gitattributes",
       "oF" : 0
     },
+    "\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.gitignore",
+      "oF" : 0
+    },
     "\/images\/arquitectura.jpg" : {
       "ft" : 16384,
       "iS" : 5871,
@@ -102,12 +110,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/carreras.diseño.jpeg" : {
+    "\/images\/carreras.diseño.jpeg" : {
       "ft" : 16384,
       "iS" : 342459,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/images\/carreras.diseño.jpg",
+      "oAP" : "\/images\/carreras.diseño.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
