@@ -1999,8 +1999,68 @@ svg {
 
 
 /*-- Mercy 2001-2500 --*/
+#servicios h2 {
+    background-color: white;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    font-size: 3em;
+    margin: 0;
+}
+#servicios2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+#servicios2 h3 {
+    color: white;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 50% 0 auto;
+}
 
+#servicios2 a {
+    text-decoration: none;
+}
+
+.bg-cover {
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.umtv {
+    background-image: linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(images/servicios.umtv.jpg);
+}
+
+.fablab {
+    background-image: linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(images/servicios.fablab.jpg);
+}
+
+.galería {
+    background-image: linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(images/servicios.galería.jpg);
+}
+
+.umedia {
+    background-image: linear-gradient( rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(images/servicios.umedia.jpg);
+}
+
+.serrcontenido {
+    width: 70%;
+    display: grid;
+    grid-template: 1fr 55px / 1fr 5%;
+    margin: 0 auto;
+}
+
+svg {
+    width: 30px;
+    fill: white;
+    margin: auto 0 0;
+}
 
 
 
