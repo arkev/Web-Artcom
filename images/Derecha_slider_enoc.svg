@@ -3,10 +3,7 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 26 48" style="enable-background:new 0 0 26 48;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#DCDCDC;}
+	.st0{fill:none;stroke:#DCDCDC;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
 </style>
-<g>
-	<path class="st0" d="M23.8,47.4c-0.5,0-1-0.2-1.4-0.6L0.6,24.9C0.2,24.6,0,24.1,0,23.5c0-0.5,0.2-1,0.6-1.4L22.1,0.6
-		c0.8-0.8,2-0.8,2.8,0c0.8,0.8,0.8,2,0,2.8L4.8,23.5L25.3,44c0.8,0.8,0.8,2,0,2.8C24.9,47.2,24.4,47.4,23.8,47.4z"/>
-</g>
+<path class="st0" d="M2,2l21.8,21.8L2.3,45.4"/>
 </svg>

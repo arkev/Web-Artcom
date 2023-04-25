@@ -155,14 +155,18 @@
     <!--Sherilyn 144-->
     <section id="conocenos">
         <h2>¡Conócenos!</h2>
-        <a>
-            <h3>Docentes</h3>
-            <button>Ver más</button>
-        </a>
-        <a>
-            <h3>Instalaciones</h3>
-            <button>Ver más</button>
-        </a>
+        <div>
+            <!--Docentes-->
+            <a>
+                <h3>Docentes</h3>
+                <button>Ver más</button>
+            </a>
+            <!--Instalaciones-->
+            <a>
+                <h3>Instalaciones</h3>
+                <button>Ver más</button>
+            </a>
+        </div>
     </section>
 
 
@@ -209,27 +213,35 @@
     <!--Mercy-->
     <section id="servicios">
         <H2> Servicios Artcom </H2>
+
+        <!-- Modulo UMTV -->
         <div id="servicios2">
-            <a href="#" alt="hope-channel" class="hopechannel bg-cover text-white">
-                <div class="serhopechannel">
-                    <h3>Hope Channel</h3>
+            <a href="#" alt="umtv" class="umtv bg-cover text-white">
+                <div class="serrcontenido">
+                    <h3>UMTV</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
                 </div>
             </a>
+       
+            <!-- Modulo Fablab -->
             <a href="#" alt="fab-lab" class="fablab bg-cover text-white">
-                <div class="serfablab">
+                <div class="serrcontenido">
                     <h3>Fab Lab</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
                 </div>
             </a>
-            <a href="#" alt="galeria" class="galeria bg-cover text-white">
-                <div class="sergaleria">
-                    <h3>Galeria Elenor Jackson</h3>
+
+            <!-- Modulo Galería -->
+            <a href="#" alt="galeria" class="galería bg-cover text-white">
+                <div class="serrcontenido">
+                    <h3>Galería Elenor Jackson</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
                 </div>
             </a>
+
+            <!-- Modulo Umedia -->
             <a href="#" alt="umedia" class="umedia bg-cover text-white">
-                <div class="serumedia">
+                <div class="serrcontenido">
                     <h3>UMedia</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
                 </div>
@@ -350,40 +362,52 @@
 
 
     <!--/Adely-->
+
     <!--Enoc 386-->
      <section id="Lugares">
-        <h2>"Lugares de trabajo de egresados Artcom"</h2>
-        <div>
-        <button id="Izquierda"></button>
-        <button id="Derecha"></button>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <h2>Lugares de trabajo de egresados Artcom</h2>
+        <!--Slider-->
+    <div id="sliderE" class="container">
+        <div class="carousel">
+          <div class="slider">
+            <!--Slide 1-->
+            <section>
+                <img src="images/Slider.jpg" alt="Primeras marcas">
+            </section>
+            <!--Slide 2-->
+            <section>
+                <img src="images/arquitectura.jpg" alt="Primeras marcas">
+            </section>
+            <!--Slide 3-->
+            <section>
+                <img src="images/disenio.jpg" alt="Primeras marcas">
+            </section>
+            <!--Slide 4-->
+            <section>
+                <img src="images/comunicacion.jpg" alt="Primeras marcas">
+            </section>
+          </div>
+            <div class="controls">
+              <button class="arrow prev">Atras</button>
+              <button class="arrow next">Adelante</button>
+            </div>
         </div>
+      </div>
+    <!--/Slider-->
     </section>
     
     <footer>
         <section>
         <div>
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="images/Logo_Artcom_Footer_Enoc.svg" alt="Marca de Artcom">
+            <img src="images/umlogo.svg" alt="Marca de Universidad de Montemorelos">
         </div>
     
         <div>
             <h3>Campus</h3>
             <p>Montemorelos, NL. MX.</p>
-            <a href="#">
-                artcom@um.edu.mx
-            </a>
-            <a href="#">
-                +52 (826)263 0951
-            </a>
+            <p><img src="images/mail.svg" alt="mail de Artcom"><a href="#">artcom@um.edu.mx</a></p>
+            <p><img src="images/tel.svg" alt="celular de Artcom"><a href="#">+52 (826)263 0951</a></p>    
         </div>
     
             <div>
@@ -407,10 +431,10 @@
             </div>
     
             <div>
-                <a href="#" id="whatsapp"></a>
-                <a href="#" id="facebook"></a>
-                <a href="#" id="instagram"></a>
-                <a href="#" id="youtube"></a>
+                <a href="#" id="whatsapp"><img src="images/Whatsapp.svg" alt="whatsapp"></a>
+                <a href="#" id="facebook"><img src="images/facebook.svg" alt="facebook"></a>
+                <a href="#" id="instagram"><img src="images/Instagram.svg" alt="instagram"></a>
+                <a href="#" id="youtube"><img src="images/Youtube.svg" alt="youtube"></a>
             </div>
     
         </section>
