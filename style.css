@@ -87,6 +87,9 @@ header section ul{
         flex-direction: column;
         padding-left: 70px;
     }
+    #sliderE .slider section {
+        padding-left: 0;
+    }
     .slider button {
         color: white;
         background: transparent;
@@ -156,6 +159,9 @@ header section ul{
     /*Aquí inician los estilos para tablet*/
     .slider section {
         padding-left: 170px;
+    }
+    #sliderE .slider section {
+        padding-left: 0;
     }
     /*Aquí terminan los estilos para tablet*/
 }
@@ -501,8 +507,8 @@ header section ul{
 /*-- Ruben 501-1000 --*/
 #beneficios {
     display: flex;
-    justify-content: space-evenly;
-    margin: 100px 200px;
+    flex-direction: column;
+    margin: 100px 0;
 }
 
 #beneficios h4 {
@@ -526,19 +532,18 @@ header section ul{
     align-items: center;
     height: 200px;
     width: 100%;
-    font-size: 3em;
+    font-size: 2.1em;
     margin: 0;
 }
 
 #carreras2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
 #carreras2 h3 {
     color: white;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 5vw;
     margin: 50% 0 auto;
 }
 
@@ -572,15 +577,104 @@ header section ul{
 .carrcontenido {
     width: 70%;
     display: grid;
-    grid-template: 1fr 55px / 1fr 5%;
+    grid-template: 1fr 30px / 1fr 5%;
     margin: 0 auto;
 }
 
-svg {
-    width: 30px;
+.benf2{
+    margin: 20px auto;
+}
+
+.flecha {
+    width: 4vw;
     fill: white;
     margin: auto 0 0;
 }
+
+/* Versión tablet */
+@media (min-width: 768px){
+    /*Aquí inician los estilos para tablet*/
+
+    #beneficios {
+        display: flex;
+        flex-direction: inherit;
+        justify-content: space-evenly;
+        margin: 100px 200px;
+    }
+    
+    #carreras h2{
+        font-size: 3em;
+    }
+
+    #carreras2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #carreras2 h3 {
+        font-size: 2.6vw;
+    }
+
+    .flecha {
+        width: 2.5vw;
+    }
+
+    /*Aquí terminan los estilos para tablet*/
+}
+
+/* Versión laptop */
+@media (min-width: 1024px){
+    /*Aquí inician los estilos para laptop*/
+    
+    
+
+    /*Aquí terminan los estilos para laptop*/
+}
+
+/* Versión Desktop */
+@media (min-width: 1200px){
+    /*Aquí inician los estilos para Desktop*/
+    
+    #carreras h3{
+        font-size: 2.2vw;
+    }
+
+    .carrcontenido {
+        grid-template: 1fr 55px / 1fr 5%;
+            margin: 0 auto;
+    }
+
+    .flecha {
+        width: 30px;
+    }
+
+    #beneficios {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 100px 200px;
+    }
+
+    /*Aquí terminan los estilos para Desktop*/
+}
+
+/* Versión Large Screen */
+@media (min-width: 1440px){
+    /*Aquí inician los estilos para Large Screen*/
+    
+    
+
+    /*Aquí terminan los estilos para Large Screen*/
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2110,7 +2204,7 @@ grid-template: 1fr 1fr/100%;
 }
 #servicios2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
 }
 
 #servicios2 h3 {
@@ -2154,177 +2248,19 @@ grid-template: 1fr 1fr/100%;
     margin: 0 auto;
 }
 
-svg {
+#servicios svg {
     width: 30px;
     fill: white;
     margin: auto 0 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Versión tablet */
+@media (min-width: 768px){
+    /*Aquí inician los estilos para tablet*/
+    #servicios2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*Aquí terminan los estilos para tablet*/
+}
 
 
 
