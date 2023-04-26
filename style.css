@@ -3156,19 +3156,100 @@ svg {
 
 
 
-/*-- Adely 3001-3500 --*/
+/*-- Adely 3001-3500 --*/ 
+#talgeneral {
+    position: relative;
+    overflow: hidden;
+}
+#talgeneral h2 {
+    background-color: #F85F11;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    font-size: 3em;
+    margin:0;
+}
+#talentos1 {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    height: 185px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#talentos1 img, #talentos2 img {
+    height: 188px;
+}
+#talentos2 {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 185px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#talgeneral > img {
+    position: absolute;
+    top: 332px;
+    left: 40%;
+    width: 20%;
+}
+/* Versión tablet */
+@media (min-width: 768px){
+    /*Aquí inician los estilos para tablet*/
+    #talentos1 img, #talentos2 img {
+        height: 253px;
+    }
+    #talgeneral > img {
+        position: absolute;
+        top: 288px;
+        left: 40%;
+        width: 20%;
+    }
+    /*Aquí terminan los estilos para tablet*/
+}
 
+/* Versión laptop */
+@media (min-width: 1024px){
+    /*Aquí inician los estilos para laptop*/
+    #talentos1 img, #talentos2 img {
+        height: 296px;
+    }
+    #talgeneral > img {
+        position: absolute;
+        top: 250px;
+        left: 40%;
+        width: 20%;
+    }
+    /*Aquí terminan los estilos para laptop*/
+}
 
+/* Versión Desktop */
+@media (min-width: 1200px){
+    /*Aquí inician los estilos para Desktop*/
+    #talentos1 img, #talentos2 img {
+        height: 356px;
+    }
+    #talgeneral > img {
+        top: 315px;
+    }
+    #talentos1 {
+        height: 350px;
+    }
+    /*Aquí terminan los estilos para Desktop*/
+}
 
-
-
-
-
-
-
-
-
-
+/* Versión Large Screen */
+@media (min-width: 1440px){
+    /*Aquí inician los estilos para Large Screen*/
+    #talentos1 img, #talentos2 img {
+        height: 380px;
+    }
+    /*Aquí terminan los estilos para Large Screen*/
+}
 
 
 
